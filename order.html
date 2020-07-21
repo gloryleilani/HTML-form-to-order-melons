@@ -34,46 +34,60 @@ and your choice of a hand-picked, premium melon.
 
     <form>
         <div>
-        <label>Your name</label>
+        <label for="input name">
+        Your name
+        </label>
         <input 
         type="text" 
-        name="recipient">
+        name="name"
+        id="input name">
         </div>
 
         <div>
-        <label>Who are we sending this to?</label>
+        <label for="input recipient">
+        Who are we sending this to?
+        </label>
         <input 
         type="text"
-        name="recipient">
+        name="recipient"
+        id="input recipient">
         </div>
 
         <div>
-        <label>Choose a melon</label>
-        <select name="melon">
-            <option value="watermelon">Watermleon</option>
-            <option value="cantaloupe">Canteloupe</option>
-            <option value="honeydew">Honeydew</option>
+        <label for="input melon">
+        Choose a melon
+        </label>
+        <select 
+        name="melon">
+            <option value="watermelon" id="input melon">Watermleon</option>
+            <option value="cantaloupe" id="input melon">Canteloupe</option>
+            <option value="honeydew" id="input melon">Honeydew</option>
         </select>
         </div>
 
         <div>
-        <label>When should we deliver?</label>
+        <label for="input time">
+        When should we deliver?
+        </label>
         <input 
         type="radio" 
         name="time"
-        value="am">
+        value="am"
+        id="input time">
         Morning
 
         <input 
         type="radio" 
         name="time"
-        value="pm">
+        value="pm"
+        id="input time">
         Evening
 
         <input 
         type="radio" 
         name="time"
-        value="any">
+        value="any"
+        id="input time">
         Any time
         </div>
         
