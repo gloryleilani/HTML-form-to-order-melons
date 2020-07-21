@@ -34,92 +34,89 @@ and your choice of a hand-picked, premium melon.
 
     <form>
         <fieldset>
-        <div>
-        <label for="input name">
-        Your name
-        </label>
-        <input 
-        type="text" 
-        name="name"
-        id="input name">
-        </div>
+            <legend> Sender Info </legend>
+            <div>
+            <label for="input name">
+            Your name
+            </label>
+            <input 
+            type="text" 
+            name="name"
+            id="input name">
+            </div>
         </fieldset>
 
         <fieldset>
-        <div>
-        <label for="input recipient">
-        Who are we sending this to?
-        </label>
-        <input 
-        type="text"
-        name="recipient"
-        id="input recipient">
-        </div>
+            <legend> Delivery Info </legend>
+            <div>
+            <label for="input recipient">
+            Who are we sending this to?
+            </label>
+            <input 
+            type="text"
+            name="recipient"
+            id="input recipient">
+            </div>
+            
+            <div>
+            <label for="input melon">
+            Choose a melon
+            </label>
+            <select 
+            name="melon">
+                <option value="watermelon" id="input melon">Watermleon</option>
+                <option value="cantaloupe" id="input melon">Canteloupe</option>
+                <option value="honeydew" id="input melon">Honeydew</option>
+            </select>
+            </div>
+
+            <div>
+            <label for="input time">
+            When should we deliver?
+            </label>
+            <input 
+            type="radio" 
+            name="time"
+            value="am"
+            id="input time">
+            Morning
+
+            <input 
+            type="radio" 
+            name="time"
+            value="pm"
+            id="input time">
+            Evening
+
+            <input 
+            type="radio" 
+            name="time"
+            value="any"
+            id="input time">
+            Any time
+            </div>
+
+            <div>
+            <label for="input message">
+            Enter your message:
+            </label>
+            </div>
+            <div>
+            <textarea name="message" id="input message"></textarea>
+            </div>
         </fieldset>
 
         <fieldset>
-        <div>
-        <label for="input melon">
-        Choose a melon
-        </label>
-        <select 
-        name="melon">
-            <option value="watermelon" id="input melon">Watermleon</option>
-            <option value="cantaloupe" id="input melon">Canteloupe</option>
-            <option value="honeydew" id="input melon">Honeydew</option>
-        </select>
-        </div>
-        </fieldset>
-
-        <fieldset>
-        <div>
-        <label for="input time">
-        When should we deliver?
-        </label>
-        <input 
-        type="radio" 
-        name="time"
-        value="am"
-        id="input time">
-        Morning
-
-        <input 
-        type="radio" 
-        name="time"
-        value="pm"
-        id="input time">
-        Evening
-
-        <input 
-        type="radio" 
-        name="time"
-        value="any"
-        id="input time">
-        Any time
-        </div>
-        </fieldset>
-
-        <fieldset>
-        <div>
-        <label for="input message">
-        Enter your message:
-        </label>
-        </div>
-        <div>
-        <textarea name="message" id="input message"></textarea>
-        </div>
-        </fieldset>
-
-        <fieldset>
-        <div>
-        <label for="input subscribe">Subscribe to our newsletter</label>
-        <input 
-        type="checkbox" 
-        name="subscribe"
-        value="yes"
-        id="input subscribe">
-        Yes
-        </div>
+            <legend>Stay in touch with us</legend>
+            <div>
+            <label for="input subscribe">Subscribe to our newsletter</label>
+            <input 
+            type="checkbox" 
+            name="subscribe"
+            value="yes"
+            id="input subscribe">
+            Yes
+            </div>
         </fieldset>
 
         <div>
