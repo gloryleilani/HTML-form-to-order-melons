@@ -33,6 +33,7 @@ and your choice of a hand-picked, premium melon.
     <h2>Order Form</h2>
 
     <form>
+        <fieldset>
         <div>
         <label for="input name">
         Your name
@@ -42,7 +43,9 @@ and your choice of a hand-picked, premium melon.
         name="name"
         id="input name">
         </div>
+        </fieldset>
 
+        <fieldset>
         <div>
         <label for="input recipient">
         Who are we sending this to?
@@ -52,7 +55,9 @@ and your choice of a hand-picked, premium melon.
         name="recipient"
         id="input recipient">
         </div>
+        </fieldset>
 
+        <fieldset>
         <div>
         <label for="input melon">
         Choose a melon
@@ -64,7 +69,9 @@ and your choice of a hand-picked, premium melon.
             <option value="honeydew" id="input melon">Honeydew</option>
         </select>
         </div>
+        </fieldset>
 
+        <fieldset>
         <div>
         <label for="input time">
         When should we deliver?
@@ -90,22 +97,30 @@ and your choice of a hand-picked, premium melon.
         id="input time">
         Any time
         </div>
-        
-        <div>
-        <label>Enter your message:</label>
-        </div>
-        <div>
-        <textarea name="message"></textarea>
-        </div>
+        </fieldset>
 
+        <fieldset>
         <div>
-        <label>Subscribe to our newsletter</label>
+        <label for="input message">
+        Enter your message:
+        </label>
+        </div>
+        <div>
+        <textarea name="message" id="input message"></textarea>
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <div>
+        <label for="input subscribe">Subscribe to our newsletter</label>
         <input 
         type="checkbox" 
         name="subscribe"
-        value="yes">
+        value="yes"
+        id="input subscribe">
         Yes
         </div>
+        </fieldset>
 
         <div>
         <button type="submit">Submit Query</button>
